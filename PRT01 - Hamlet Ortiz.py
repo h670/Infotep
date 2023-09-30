@@ -23,14 +23,14 @@ num3 = int(input("Ingrese su tercer numero: "))
 #en este caso cree mis variables de resultados y concatene los datos y las respuestas que le dara a cada operacion.
 Resultado1 = f"Su Primer numero que es {num1} es mayor o igual que el segundo y mayor que el tercero pero con la operacion {num1} + ({num2} * {num3}) es igual a: {num1 +  (num2*num3)}"
 Resultado2 = f"Su Segundo numero que es {num2} es mayor, pero con la operacion {num2} * {num3} es igual a: {num2*num3}."
-Resultado3 = f"Su Segundo numero que es {num2} solo es menor que el tercero, pero con la operacion {num3} - {num2} es igual a: {num3-num2}."
+Resultado3 = f"El tercero es el mayor y el Segundo numero es menor que el tercero, pero con la operacion {num3} - {num2} es igual a: {num3-num2}."
 Resultado4 = f"Su tercer numero que es {num3} es mayor"
 #aqui use lo que seria unas ondiciones para que me realice las operaciones necesarias para que el programa que me solicitaron.
 if num1 >= num2 and num1 > num3:
     print(Resultado1)
 elif num2 > num1 and num2 > num3:
     print(Resultado2)
-elif num2 > num1 and num2 < num3:
+elif num2 < num3:
     print(Resultado3)
 elif num3 > num1 and num3 > num2:
     print(Resultado4)
